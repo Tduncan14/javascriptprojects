@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            border: 10px solid #333;
+            min-height: 100vh;
+            display: grid;
+            justify-content: center;
+            grid-template:
+                "header header" 100px
+                "sidebar content" 1fr
+                "footer footer" 100px / 200px 1fr;
+        }
+
+        header {
+            border: 2px solid #dd0808;
+            background-color: #ff6666;
+            grid-area: header;
+        }
+
+
+        aside {
+            border: 2px solid #0ba7c6;
+            background-color: #74ddf2;
+            grid-area: sidebar
+        }
+
+
+        main {
+            border: 2px solid #c4be0d;
+            background-color: #0ba7c6;
+            grid-area: content;
+        }
+
+
+        footer {
+            border: 2px solid #c4be0d;
+            background-color: #f7f380;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+
+        </header>
+        <aside>
+
+        </aside>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
