@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(150px, auto);
+            grid-gap: 10px;
+            margin: 0 auto;
+            align-items: start;
+            justify-items: end;
+        }
+
+
+        .one {
+            justify-self: end;
+            align-self: end;
+        }
+
+        .two {
+            align-self: center;
+            justify-self: center;
+        }
+
+        .three {
+            align-self: start;
+            justify-self: start;
+        }
+
+        .main>div:nth-child(even) {
+            background: #777;
+            padding: 30px;
+        }
+
+        .main>div:nth-child(odd) {
+            background: blue;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>
