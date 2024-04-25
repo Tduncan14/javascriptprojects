@@ -26,6 +26,8 @@ body {
 img {
     width: 500px;
     height: 500px;
+    max-width: 500px;
+    min-width: 500px;
     object-fit: cover;
 }
 
