@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    color: white;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 50px;
+    text-align: center;
+}
+
+
+.counter {
+    font-size: 60px;
+    margin: 10px;
+
+}
+
+
+@media(max-width:580px) {
+    body {
+        flex-direction: column;
+    }
+
+    svg {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
