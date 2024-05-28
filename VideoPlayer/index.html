@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman </title>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+    <h1>Hangman</h1>
+    <p> Find the hidden word Enter a letter</p>
+
+    <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+            <!-- Drawing the gallows -->
+            <line x1="50" y1="20" x2="150" y2="20" stroke="white" stroke-width="4" />
+            <line x1="150" y1="20" x2="150" y2="50" stroke="white" stroke-width="4" />
+            <line x1="50" y1="20" x2="50" y2="230" stroke="white" stroke-width="4" />
+            <line x1="20" y1="230" x2="80" y2="230" stroke="white" stroke-width="4" />
+
+            <!-- Drawing the noose -->
+            <line x1="150" y1="50" x2="150" y2="70" stroke="white" stroke-width="2" />
+
+            <!-- Drawing the head -->
+            <circle class="figure-part" cx="150" cy="90" r="20" stroke="white" stroke-width="2" fill="none" />
+
+            <!-- Drawing the body -->
+            <line class="figure-part" x1="150" y1="110" x2="150" y2="170" stroke="white" stroke-width="2" />
+
+            <!-- Drawing the arms -->
+            <line class="figure-part" x1="150" y1="130" x2="130" y2="150" stroke="white" stroke-width="2" />
+            <line class="figure-part" x1="150" y1="130" x2="170" y2="150" stroke="white" stroke-width="2" />
+
+            <!-- Drawing the legs -->
+            <line class="figure-part" x1="150" y1="170" x2="130" y2="210" stroke="white" stroke-width="2" />
+            <line class="figure-part" x1="150" y1="170" x2="170" y2="210" stroke="white" stroke-width="2" />
+        </svg>
+
+
+        <div class="wrong-letters-container">
+            <div id="wrong-letters">
+                <p>Wrong</p>
+                <span>e,r,t,y</span>
+            </div>
+        </div>
+
+
+        <div class="word" id="word">
+            <div class="letter">h</div>
+            <div class="letter">e</div>
+            <div class="letter">l</div>
+            <div class="letter">l</div>
+            <div class="letter">o</div>
+        </div>
+    </div>
+    <!-- container for final message -->
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+
+            <div id="final-message"> You Have Won</div>
+
+            <button id="play-button">Play Again
+
+            </button>
+        </div>
+
+    </div>
+
+    <div class="notification-container" id="notification-container">
+        <p> You have already entered this letter </p>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
