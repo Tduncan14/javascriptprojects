@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+            font-size: 15px;
+        }
+
+        div {
+            padding: 2rem;
+        }
+
+        div:nth-child(1) {
+            background-color: blueviolet;
+        }
+
+        div:nth-child(2) {
+            background-color: maroon;
+        }
+
+        div:nth-child(3) {
+            background-color: orange;
+        }
+
+        div:nth-child(4) {
+            background-color: teal;
+        }
+
+        div:nth-child(5) {
+            background-color: hotpink;
+        }
+
+
+        .container {
+            display: grid;
+        }
+
+
+        .container2 {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 150px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid: intro</h1>
+    <section class="container">
+        <div>first</div>
+        <div>second</div>
+        <div>third</div>
+        <div>fourth</div>
+        <div>fifth</div>
+    </section>
+
+
+    <section class="container2">
+        <div>first</div>
+        <div>second</div>
+        <div>third</div>
+        <div>fourth</div>
+        <div>fifth</div>
+    </section>
+</body>
+
+</html>
