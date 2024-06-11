@@ -2,10 +2,10 @@ const hourEl = document.querySelector('.hour');
 const minuteEl = document.querySelector('.minute');
 const secondEl = document.querySelector('.second');
 const timeEl = document.querySelector('.time');
-const date = new Date.getDate()
-const dateEl = document.querySelector('.date');
+const date = new Date().getDate()
+let dateEl = document.querySelector('.date');
 const toggleEl = document.querySelector('.toggle');
-const ampm = hours >= 12 ? 'pm' : 'am';
+
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -44,6 +44,7 @@ function setTime() {
     const hoursForClock = hours % 12
     const minutes = time.getMinutes()
     const seconds = time.getSeconds()
+    const ampm = hours >= 12 ? 'pm' : 'am';
 
 
     hourEl.style.transform = `translate(-50%,-100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`;
