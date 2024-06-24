@@ -10,7 +10,7 @@ const lastDayLastMonth = new Date(new Date().getFullYear(), new Date().getMonth(
 const lastDayCurrentMonth = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).getDate();
 
 // Get the first day of the current month (adjusting for Sunday = 0)
-const firstDay = new Date(new Date().getFullYear(), new Date().getMonth(), 1).getDay();
+const firstDay = new Date(new Date().getFullYear(), new Date().getMonth(), 1).getDay() - 1;
 
 console.log(firstDay);
 
@@ -25,7 +25,7 @@ for (let i = 0; i < firstDay; i++) {
 }
 
 // Adding days of the current month
-for (let i = 1; i <= lastDayCurrentMonth; i++) {
+for (let i = 1; i <= lastDayCurrentMonth + 1; i++) {
     if (i === time.getDate()) {
         monthdays += `<div class="today">${i} </div>`;
     } else {
