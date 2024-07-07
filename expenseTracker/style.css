@@ -140,7 +140,7 @@ input[type='text'].input[type='number'] {
 }
 
 
-.li li.minus {
+.list li.minus {
     border-right: 5px solid #c0392b;
 }
 
@@ -171,4 +171,5 @@ input[type='text'].input[type='number'] {
 .btn:focus,
 .delete-btn:focus {
     outline: 0;
+
 }
