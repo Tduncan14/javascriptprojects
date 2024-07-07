@@ -81,6 +81,11 @@ h4 {
     color: #2ecc71;
 }
 
+
+.plus {
+    color: #2ecc71;
+}
+
 .money.minus {
     color: #c0392b;
 }
@@ -110,7 +115,8 @@ input[type='text'].input[type='number'] {
     color: #fff;
     border: 0;
     display: block;
-    cursor: pointer font-size: 16px;
+    cursor: pointer;
+    font-size: 16px;
     margin: 10px 0 30px;
     padding: 10px;
     width: 100%;
@@ -119,7 +125,7 @@ input[type='text'].input[type='number'] {
 
 .list {
     list-style-type: none;
-    padding: 0;
+    padding: 1rem;
     margin-bottom: 40px;
 }
 
@@ -129,6 +135,7 @@ input[type='text'].input[type='number'] {
     box-shadow: var(--box-shadow);
     color: #333;
     display: flex;
+    padding: 1rem;
     justify-content: space-between;
     position: relative;
     margin: 10px 0;
@@ -140,10 +147,15 @@ input[type='text'].input[type='number'] {
 }
 
 
+
 .list li.minus {
     border-right: 5px solid #c0392b;
 }
 
+
+li:hover {
+    cursor: pointer;
+}
 
 .delete-btn {
     cursor: pointer;
@@ -164,7 +176,9 @@ input[type='text'].input[type='number'] {
 
 .list li:hover .delete-btn {
     opacity: 1;
+    cursor: pointer;
 }
+
 
 
 
